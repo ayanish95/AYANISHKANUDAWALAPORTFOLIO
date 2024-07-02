@@ -8,8 +8,11 @@ import { ContactComponent } from './page/contact/contact.component';
 import { SkillsComponent } from './page/skill/skills.component';
 import { PortfolioComponent } from './page/portfolio/portfolio.component';
 
-export const routes: Routes = [{ path: 'home', component: HomeComponent },
+export const routes: Routes = [      
       { path: '', component: HomeComponent },
+      { path: 'home', component: HomeComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'Skills', component: SkillsComponent },
-      { path: 'portfolio', component: PortfolioComponent }];
+      { path: 'portfolio', component: PortfolioComponent },
+      { path: '**', component: HomeComponent },
+];
