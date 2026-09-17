@@ -148,7 +148,8 @@ body { background: var(--paper); color: var(--muted); }
 .project-detail span { color: var(--muted); font-size: 1.5rem; line-height: 1.55; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 8px; }
 .tag-list span { padding: 6px 9px; border: 1px solid var(--line); color: var(--ink); font-size: 1.2rem; }
-.project-card-featured .tag-list span { border-color: var(--white_a10); color: var(--white_a75); }
+.project-card-featured .tag-list span,
+.section-muted .tag-list span { border-color: var(--white_a10); color: var(--white_a75); }
 .skill-card { min-height: 220px; }
 .skill-index { margin-block-end: 28px; }
 .skill-card .title-sm { margin-block-end: 12px; }
