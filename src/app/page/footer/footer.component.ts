@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { IonCardContent, IonIcon } from '@ionic/angular/standalone';
 
 
 @Component({
     selector: 'app-footer',
-    imports: [CommonModule, IonCardContent, IonIcon],
+    imports: [IonCardContent, IonIcon],
     templateUrl: './footer.component.html',
     styleUrl: './footer.component.css'
 })

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { RouterLink, RouterOutlet,  } from '@angular/router';
 import { addIcons } from 'ionicons';
 import { call, logoGithub, logoLinkedin, mail, menuOutline } from 'ionicons/icons';
@@ -12,7 +12,7 @@ import { FooterComponent } from './page/footer/footer.component';
 
 @Component({
     selector: 'app-root',
-    imports: [CommonModule, RouterOutlet, RouterLink, HeaderComponent, FooterComponent],
+    imports: [RouterOutlet, RouterLink, HeaderComponent, FooterComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'
 })
