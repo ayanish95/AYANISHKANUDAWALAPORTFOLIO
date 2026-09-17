@@ -28,8 +28,6 @@
               "src/styles.css",
               "src/assets/css/require.css",
               "src/assets/css/main.css",
-              "src/assets/css/pages/service.css",
-              "src/assets/css/pages/portfolio.css",
               "src/assets/css/pages/contact.css"
             ],
             "scripts": []

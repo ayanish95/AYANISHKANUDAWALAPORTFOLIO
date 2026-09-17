@@ -49,6 +49,18 @@
   --jet: hsl(0, 0%, 22%);
 
   /**
+   * design system palette (page background/text/borders/accent)
+   */
+
+  --ink: #18222d;
+  --muted: #66717c;
+  --paper: #f7f8f5;
+  --line: #d9dedb;
+  --accent: #f36b3c;
+  --accent-soft: #fff0df;
+  --deep: #18222d;
+
+  /**
    * typography
    */
 
