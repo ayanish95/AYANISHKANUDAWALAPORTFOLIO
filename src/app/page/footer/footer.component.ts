@@ -1,17 +1,14 @@
-
 import { Component } from '@angular/core';
-import { IonCardContent, IonIcon } from '@ionic/angular/standalone';
-
+import { IconComponent } from '../../shared/icon/icon.component';
+import { PROFILE } from '../../shared/profile';
 
 @Component({
     selector: 'app-footer',
-    imports: [IonCardContent, IonIcon],
+    imports: [IconComponent],
     templateUrl: './footer.component.html',
     styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-
-    gotoLink(url:string){
-      window.open(url,"_blank");
-    }
+    protected readonly profile = PROFILE;
+    protected readonly year = new Date().getFullYear();
 }

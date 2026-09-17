@@ -30,40 +30,7 @@
               "src/assets/css/main.css",
               "src/assets/css/pages/service.css",
               "src/assets/css/pages/portfolio.css",
-              "src/assets/css/pages/contact.css",
-              {
-                "input": "node_modules/@ionic/angular/css/core.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/normalize.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/structure.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/typography.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/display.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/padding.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/float-elements.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/text-alignment.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/text-transformation.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/flex-utils.css"
-              },
-              {
-                "input": "src/theme/variables.css"
-              }
+              "src/assets/css/pages/contact.css"
             ],
             "scripts": []
           },
@@ -126,47 +93,14 @@
             ],
             "scripts": []
           }
-        },
-        "ionic-cordova-serve": {
-          "builder": "@ionic/angular-toolkit:cordova-serve",
-          "options": {
-            "cordovaBuildTarget": "AYANISHKANUDAWALAPORTFOLIO:ionic-cordova-build",
-            "devServerTarget": "AYANISHKANUDAWALAPORTFOLIO:serve"
-          },
-          "configurations": {
-            "production": {
-              "cordovaBuildTarget": "AYANISHKANUDAWALAPORTFOLIO:ionic-cordova-build:production",
-              "devServerTarget": "AYANISHKANUDAWALAPORTFOLIO:serve:production"
-            }
-          }
-        },
-        "ionic-cordova-build": {
-          "builder": "@ionic/angular-toolkit:cordova-build",
-          "options": {
-            "browserTarget": "AYANISHKANUDAWALAPORTFOLIO:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "AYANISHKANUDAWALAPORTFOLIO:build:production"
-            }
-          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "0af3ffb8-ebfb-4843-9882-1737616a198c",
-    "schematicCollections": [
-      "@ionic/angular-toolkit"
-    ]
+    "analytics": "0af3ffb8-ebfb-4843-9882-1737616a198c"
   },
   "schematics": {
-    "@ionic/angular-toolkit:component": {
-      "styleext": "scss"
-    },
-    "@ionic/angular-toolkit:page": {
-      "styleext": "scss"
-    },
     "@schematics/angular:component": {
       "type": "component"
     },

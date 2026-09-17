@@ -1,3 +1,41 @@
 <main class="page-main">
-  <section class="section contact contact-page" aria-labelledby="contact-title"><div class="container contact-layout"><div><p class="eyebrow">Open to thoughtful work</p><h1 class="headline-md" id="contact-title">Let’s connect.</h1><p class="body-lg contact-text">For software engineering opportunities, technical conversations, or collaboration, reach me through the links below.</p></div><ul class="contact-list"><li class="contact-item"><div class="item-icon"><ion-icon name="mail" aria-hidden="true"></ion-icon></div><div><p class="label-lg">Email</p><a href="mailto:ayanish95@gmail.com" class="body-lg">ayanish95&#64;gmail.com</a></div></li><li class="contact-item"><div class="item-icon"><ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon></div><div><p class="label-lg">LinkedIn</p><a href="https://www.linkedin.com/in/ayanishkanudawala/" target="_blank" rel="noopener noreferrer" class="body-lg">linkedin.com/in/ayanishkanudawala</a></div></li><li class="contact-item"><div class="item-icon"><ion-icon name="logo-github" aria-hidden="true"></ion-icon></div><div><p class="label-lg">GitHub</p><a href="https://github.com/ayanish95" target="_blank" rel="noopener noreferrer" class="body-lg">github.com/ayanish95</a></div></li><li class="contact-item"><div class="item-icon"><ion-icon name="call" aria-hidden="true"></ion-icon></div><div><p class="label-lg">Phone</p><a href="tel:+919624461661" class="body-lg">+91 96244 61661</a></div></li></ul></div></section>
+  <section class="section contact contact-page" aria-labelledby="contact-title">
+    <div class="container contact-layout">
+      <div>
+        <p class="eyebrow">Open to thoughtful work</p>
+        <h1 class="headline-md" id="contact-title">Let’s connect.</h1>
+        <p class="body-lg contact-text">For software engineering opportunities, technical conversations, or collaboration, reach me through the links below.</p>
+      </div>
+      <ul class="contact-list">
+        <li class="contact-item">
+          <div class="item-icon"><app-icon name="mail" /></div>
+          <div>
+            <p class="label-lg">Email</p>
+            <a href="mailto:{{ profile.email }}" class="body-lg">{{ profile.email }}</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="item-icon"><app-icon name="linkedin" /></div>
+          <div>
+            <p class="label-lg">LinkedIn</p>
+            <a [href]="profile.linkedinUrl" target="_blank" rel="noopener noreferrer" class="body-lg">{{ profile.linkedinHandle }}</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="item-icon"><app-icon name="github" /></div>
+          <div>
+            <p class="label-lg">GitHub</p>
+            <a [href]="profile.githubUrl" target="_blank" rel="noopener noreferrer" class="body-lg">{{ profile.githubHandle }}</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="item-icon"><app-icon name="call" /></div>
+          <div>
+            <p class="label-lg">Phone</p>
+            <a [href]="profile.phoneHref" class="body-lg">{{ profile.phoneDisplay }}</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 </main>

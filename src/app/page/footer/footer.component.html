@@ -1,8 +1,9 @@
 <footer class="footer">
-  <div class="container">
+  <div class="container footer-layout">
+    <p class="footer-copyright">© {{ year }} Ayanish Kanudawala. All rights reserved.</p>
     <ul class="social-list" aria-label="Professional profiles">
-      <li><a href="https://www.linkedin.com/in/ayanishkanudawala/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon></a></li>
-      <li><a href="https://github.com/ayanish95" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><ion-icon name="logo-github" aria-hidden="true"></ion-icon></a></li>
+      <li><a [href]="profile.linkedinUrl" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><app-icon name="linkedin" /></a></li>
+      <li><a [href]="profile.githubUrl" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><app-icon name="github" /></a></li>
     </ul>
   </div>
 </footer>

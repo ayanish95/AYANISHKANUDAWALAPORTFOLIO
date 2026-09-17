@@ -123,7 +123,7 @@ img,
 span,
 label,
 button,
-ion-icon { display: block; }
+app-icon { display: block; }
 
 a {
   color: inherit;
@@ -145,7 +145,7 @@ button { cursor: pointer; }
 input,
 textarea { width: 100%; }
 
-ion-icon { pointer-events: none; }
+app-icon { pointer-events: none; }
 
 address { font-style: normal; }
 

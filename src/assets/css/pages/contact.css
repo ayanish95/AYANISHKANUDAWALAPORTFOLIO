@@ -21,13 +21,6 @@
 
 
 
-/*-----------------------------------*\
-  #COMPONENTS
-\*-----------------------------------*/
-
-@import url("../components/btn.css");
-
-
 
 
 
@@ -88,7 +81,7 @@ textarea {
   flex-shrink: 0;
 }
 
-.contact-list .item-icon ion-icon { font-size: 2.5rem; }
+.contact-list .item-icon app-icon { font-size: 2.5rem; }
 
 .contact .label-lg {
   color: var(--white_a80);
