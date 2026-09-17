@@ -5,11 +5,9 @@
   <header class="header" data-header>
       <div class="container">
   
-        <a routerLink="/home" class="logo">
-          <!-- <img src="assets/images/logo.svg" width="151" height="28" alt="Jassa home"> -->
-        </a>
+        <a routerLink="/home" class="logo" aria-label="Ayanish Kanudawala home">AK</a>
   
-        <nav class="navbar" data-navbar [ngClass]="status ? 'active' : ''">
+        <nav class="navbar" id="primary-navigation" data-navbar [ngClass]="status ? 'active' : ''">
           <ul class="navbar-list">
   
             <li class="navbar-item">
@@ -17,12 +15,24 @@
             </li>
   
             <li class="navbar-item">
-              <a routerLink="/Skills"  class="label-lg navbar-link has-after" routerLinkActive="active">Skills</a>
+              <a routerLink="/about" (click)="status = false" class="label-lg navbar-link has-after" routerLinkActive="active">About</a>
             </li>
-  
-            <!-- <li class="navbar-item">
-              <a routerLink="/portfolio"  class="label-lg navbar-link has-after" routerLinkActive="active">Portfolio</a>
-            </li> -->
+
+            <li class="navbar-item">
+              <a routerLink="/experience" (click)="status = false" class="label-lg navbar-link has-after" routerLinkActive="active">Experience</a>
+            </li>
+
+            <li class="navbar-item">
+              <a routerLink="/portfolio" class="label-lg navbar-link has-after" routerLinkActive="active">Projects</a>
+            </li>
+
+            <li class="navbar-item">
+              <a routerLink="/skills" class="label-lg navbar-link has-after" routerLinkActive="active">Skills</a>
+            </li>
+
+            <li class="navbar-item">
+              <a routerLink="/certifications" (click)="status = false" class="label-lg navbar-link has-after" routerLinkActive="active">Certifications</a>
+            </li>
   
             <li class="navbar-item">
               <a routerLink="/contact"  class="label-lg navbar-link has-after" routerLinkActive="active">Contact</a>
@@ -33,7 +43,7 @@
   
         <a routerLink="/contact" class="btn btn-primary">Contact Now</a>
   
-        <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler (click)="addToggle()">
+        <button class="nav-toggle-btn" aria-label="Toggle navigation" [attr.aria-expanded]="status" aria-controls="primary-navigation" data-nav-toggler (click)="addToggle()">
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
         </button>
   

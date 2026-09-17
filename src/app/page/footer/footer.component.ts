@@ -4,11 +4,10 @@ import { IonCardContent, IonIcon } from '@ionic/angular/standalone';
 
 
 @Component({
-  selector: 'app-footer',
-  standalone: true,
-  imports: [CommonModule,IonCardContent,IonIcon],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+    selector: 'app-footer',
+    imports: [CommonModule, IonCardContent, IonIcon],
+    templateUrl: './footer.component.html',
+    styleUrl: './footer.component.css'
 })
 export class FooterComponent {
 

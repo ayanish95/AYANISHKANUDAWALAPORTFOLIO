@@ -1,393 +1,69 @@
 <main>
-      <article>
-  
-        <!-- 
-          - #HERO
-        -->
-  
-        <section class="section hero" aria-label="home" >
-          <div class="container" style="margin-top: -15px;">
-  
-            <div class="hero-content">
-  
-              <p class="hero-subtitle">My name is AYANISH KANUDAWALA</p>
-  
-              <h1 class="headline-lg">I'm a SOFTWARE ENGINEER</h1>
-  
-              <p class="hero-text body-md">
-                Based in Ahemdabad, Gujarat.
-              </p>
-  
-              <!-- <a href="#" class="btn btn-primary">Let's Start</a>        style="margin-top: 50px;" -->
-  
-            </div>
+  <article>
+    <section class="section hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-subtitle">AYANISH KANUDAWALA</p>
+          <h1 class="headline-lg" id="hero-title">Software Engineer</h1>
+          <p class="hero-text body-md">.NET Full Stack Developer | Azure | Microservices | Angular</p>
+          <p class="body-md">Based in Ahmedabad, Gujarat.</p>
+          <div class="wrapper">
+            <a routerLink="/portfolio" class="btn btn-primary">View Projects</a>
+            <a href="assets/pdf/Ayanish_Kanudawala_Software_Engineer_DotNet_Azure.pdf" download="Ayanish_Kanudawala_Software_Engineer_DotNet_Azure.pdf" class="btn btn-secondary">Download Resume</a>
+          </div>
+        </div>
+        <div class="about-content">
+          <h2 class="title-lg">Building scalable enterprise software and cloud-native systems.</h2>
+          <p class="body-md section-text">
+            I am a Software Engineer with 5+ years of experience building secure applications with C#, .NET, Angular,
+            microservices, and Microsoft Azure. I work across APIs, distributed systems, event-driven workflows,
+            CI/CD, and production support, while expanding into AI-enabled development.
+          </p>
+          <div class="wrapper">
+            <a routerLink="/contact" class="btn btn-primary">Contact Me</a>
+            <a routerLink="/skills" class="btn btn-secondary">Explore Skills</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
 
-            <div class="about-content">
-  
-              <h2 class="title-lg">I'm a Full Stack Developer with over 3 years of experience.</h2>
-  
-              <p class="body-md section-text" style="margin-bottom: 1.5cap;">
-                I'm a Full Stack Developer with over 3 years of experience. I'm from Gujarat. I code and
-                create web elements for amazing people around the world. I like work with new people. New people new
-                Experiences.
-              </p>
-              
-              <!-- <ul class="about-list">
-  
-                <li>
-                  <p class="list-text">
-                    <strong class="strong title-md">285+</strong> Projet Completed
-                  </p>
-                </li>
-  
-                <li>
-                  <p class="list-text">
-                    <strong class="strong title-md">190+</strong> Happy Clients
-                  </p>
-                </li>
-  
-              </ul> -->
-  
-              <div class="wrapper">
-                <a routerLink="/contact" routerLinkActive="active" class="btn btn-primary">Contact Me</a>
-  
-                <a (click)="downloadpdf()" class="btn btn-secondary">Download Resume</a>
-                 <!-- <a href="assets/pdf/AYANISH_KANUDAWALA_ANGULAR_DOTNET_3YRS.pdf" class="btn btn-secondary">Download Resume</a> -->
-              </div>
-  
-            </div>
-  
-            <!-- <figure class="hero-banner">
-              <img src="assets/images/hero-banner.png" width="680" height="645"
-                alt="Jassa, the blonde, dressed in a green hoodie with a smile on her face" class="w-100">
-            </figure> -->
-  
-          </div>
-        </section>
-  
-  
-  
-  
-  
-        <!-- 
-          - #CLIENT
-        -->
-  
-        <!-- <section class="client" aria-label="Trusted client">
-          <div class="container">
-  
-            <ul class="slider">
-  
-              <li class="slider-item">
-                <img src="assets/images/client-1.svg" width="130" height="40" alt="clients" class="w-100">
-              </li>
-  
-              <li class="slider-item">
-                <img src="assets/images/client-2.svg" width="130" height="40" alt="clients" class="w-100">
-              </li>
-  
-              <li class="slider-item">
-                <img src="assets/images/client-3.svg" width="130" height="40" alt="clients" class="w-100">
-              </li>
-  
-              <li class="slider-item">
-                <img src="assets/images/client-4.svg" width="130" height="40" alt="clients" class="w-100">
-              </li>
-  
-              <li class="slider-item">
-                <img src="assets/images/client-5.svg" width="130" height="40" alt="clients" class="w-100">
-              </li>
-  
-            </ul>
-  
-          </div>
-        </section>
-   -->
-  
-  
-  
-  
-        <!-- 
-          - #ABOUT
-        -->
-  
-        <!-- <section class="section about" aria-label="about me">
-          <div class="container">
-  
-            <figure class="about-banner">
-              <img src="assets/images/about-banner.png" width="580" height="554" loading="lazy"
-                alt="Jassa, the blonde, dressed in a black tops with a smile on her face" class="w-100">
-            </figure>
-  
-            <div class="about-content">
-  
-              <h2 class="title-lg">I'm a Full Stack Developer with over 3 years of experience.</h2>
-  
-              <p class="body-md section-text">
-                I'm a Full Stack Developer Developer with over 3 years of experience. I'm from Gujarat. I code and
-                create web elements for amazing people around the world. I like work with new people. New people new
-                Experiences.
-              </p>
-  
-              <ul class="about-list">
-  
-                <li>
-                  <p class="list-text">
-                    <strong class="strong title-md">285+</strong> Projet Completed
-                  </p>
-                </li>
-  
-                <li>
-                  <p class="list-text">
-                    <strong class="strong title-md">190+</strong> Happy Clients
-                  </p>
-                </li>
-  
-              </ul>
-  
-              <div class="wrapper">
-                <a routerLink="/contact" class="btn btn-primary">Contact Me</a>
-  
-                <a routerLink="/portfolio" class="btn btn-secondary">Portfolio</a>
-              </div>
-  
-            </div>
-  
-          </div>
-        </section>
-   -->
-  
-  
-  
-  
-        <!-- 
-          - #SKILL
-        -->
-<!--   
-        <section class="section skill" aria-labelledby="skill-label">
-          <div class="container">
-  
-            <div class="skill-content">
-  
-              <h2 class="section-title headline-md" id="skill-label">My Skills</h2>
-  
-              <ul class="skill-list">
-  
-                <li>
-                  <div class="card card-sm" style="background-color: hsl(177, 39%, 72%)">
-  
-                    <div class="card-media">
-                      <ion-icon name="logo-html5"></ion-icon>
-                    </div>
-  
-                    <h2 class="card-title">HTML</h2>
-  
-                  </div>
-                </li>
-  
-                <li>
-                  <div class="card card-sm" style="background-color: hsl(41, 99%, 64%)">
-  
-                    <div class="card-media">
-                      <ion-icon name="logo-css3"></ion-icon>
-                    </div>
-  
-                    <h2 class="card-title">CSS</h2>
-  
-                  </div>
-                </li>
-  
-                <li>
-                  <div class="card card-sm" style="background-color: hsl(19, 97%, 85%)">
-  
-                    <div class="card-media">
-                      <ion-icon name="logo-react"></ion-icon>
-                    </div>
-  
-                    <h2 class="card-title">React JS</h2>
-  
-                  </div>
-                </li>
-  
-                <li>
-                  <div class="card card-sm" style="background-color: hsl(221, 100%, 79%)">
-  
-                    <div class="card-media">
-                      <ion-icon name="logo-angular"></ion-icon>
-                    </div>
-  
-                    <h2 class="card-title">Angular</h2>
-  
-                  </div>
-                </li>
-  
-                <li>
-                  <div class="card card-sm" style="background-color: hsl(76, 39%, 72%)">
-  
-                    <div class="card-media">
-                      <ion-icon name="logo-apple"></ion-icon>
-                    </div>
-  
-                    <h2 class="card-title">iOs App</h2>
-  
-                  </div>
-                </li>
-  
-                <li>
-                  <div class="card card-sm" style="background-color: hsl(245, 100%, 90%)">
-  
-                    <div class="card-media">
-                      <ion-icon name="logo-android"></ion-icon>
-                    </div>
-  
-                    <h2 class="card-title">App Dev</h2>
-  
-                  </div>
-                </li>
-  
-              </ul>
-  
-            </div>
-  
-            <figure class="skill-banner">
-              <img src="assets/images/skill-banner.png" width="581" height="657" loading="lazy"
-                alt="Jassa, the blonde, dressed in a green hoodie with a smile on her face" class="w-100">
-            </figure>
-  
-          </div>
-        </section> -->
-  
-  
-  
-  
-  
-        <!-- 
-          - #CTA
-        -->
-  
-        <!-- <section class="cta">
-          <div class="container">
-            <h2 class="title-lg">Intrested working with me?</h2>
-  
-            <a routerLink="/contact" class="btn btn-tertiary">Contact Now</a>
-          </div>
-        </section>
-   -->
-  
-  
-  
-  
-        <!-- 
-          - #TESTIMONIALS
-        -->
-  
-        <!-- <section class="section testi" aria-labelledby="testi-label">
-          <div class="container">
-  
-            <h2 class="headline-md section-title text-center" id="testi-label">Testimonial</h2>
-  
-            <ul class="slider">
-  
-              <li class="slider-item card-container">
-                <div class="card card-lg">
-  
-                  <figure class="card-media">
-                    <img src="assets/images/testi-1.jpg" width="100" height="100" loading="lazy" alt="Jennifer Lutheran"
-                      class="img-cover">
-                  </figure>
-  
-                  <div class="card-content">
-  
-                    <blockquote class="body-sm">
-                      Dolor lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                      industry's standard dummy text ever since the 1500s.
-                    </blockquote>
-  
-                    <p class="client-name">Jennifer Lutheran</p>
-  
-                    <p class="client-title">CEO at pxdraft</p>
-  
-                  </div>
-  
-                </div>
-              </li>
-  
-              <li class="slider-item card-container">
-                <div class="card card-lg">
-  
-                  <figure class="card-media">
-                    <img src="assets/images/testi-2.jpg" width="100" height="100" loading="lazy" alt="Jennifer Lutheran"
-                      class="img-cover">
-                  </figure>
-  
-                  <div class="card-content">
-  
-                    <blockquote class="body-sm">
-                      Dolor lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                      industry's standard dummy text ever since the 1500s.
-                    </blockquote>
-  
-                    <p class="client-name">Jennifer Lutheran</p>
-  
-                    <p class="client-title">CEO at pxdraft</p>
-  
-                  </div>
-  
-                </div>
-              </li>
-  
-              <li class="slider-item card-container">
-                <div class="card card-lg">
-  
-                  <figure class="card-media">
-                    <img src="assets/images/testi-3.jpg" width="100" height="100" loading="lazy" alt="Jennifer Lutheran"
-                      class="img-cover">
-                  </figure>
-  
-                  <div class="card-content">
-  
-                    <blockquote class="body-sm">
-                      Dolor lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                      industry's standard dummy text ever since the 1500s.
-                    </blockquote>
-  
-                    <p class="client-name">Jennifer Lutheran</p>
-  
-                    <p class="client-title">CEO at pxdraft</p>
-  
-                  </div>
-  
-                </div>
-              </li>
-  
-              <li class="slider-item card-container">
-                <div class="card card-lg">
-  
-                  <figure class="card-media">
-                    <img src="assets/images/testi-4.jpg" width="100" height="100" loading="lazy" alt="Jennifer Lutheran"
-                      class="img-cover">
-                  </figure>
-  
-                  <div class="card-content">
-  
-                    <blockquote class="body-sm">
-                      Dolor lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                      industry's standard dummy text ever since the 1500s.
-                    </blockquote>
-  
-                    <p class="client-name">Jassa Lutheran</p>
-  
-                    <p class="client-title">CEO at pxdraft</p>
-  
-                  </div>
-  
-                </div>
-              </li>
-  
-            </ul>
-  
-          </div>
-        </section> -->
-  
-      </article>
-    </main>
+  <section class="section home-section" id="about" aria-labelledby="about-title">
+    <div class="container split-section">
+      <div>
+        <p class="eyebrow">Profile</p>
+        <h2 class="headline-md" id="about-title">Engineering systems that stay useful under pressure.</h2>
+      </div>
+      <div class="section-copy">
+        <p class="body-md">Software Engineer with 5+ years of experience building scalable enterprise applications and cloud-native solutions with C#, .NET, Angular, microservices, and Microsoft Azure.</p>
+        <p class="body-md">My work spans RESTful APIs, distributed systems, event-driven workflows, secure multi-tenant platforms, CI/CD, observability, and production support. I am also growing into AI-assisted development with GitHub Copilot, Claude Code, and MCP-based workflows.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section home-section section-muted" id="experience" aria-labelledby="experience-title">
+    <div class="container">
+      <div class="section-heading-row">
+        <div><p class="eyebrow">Experience</p><h2 class="headline-md" id="experience-title">From product features to production systems.</h2></div>
+        <p class="body-md section-intro">A five-year progression across enterprise platforms, integrations, real-time systems, and cloud-native architecture.</p>
+      </div>
+      <ol class="experience-list">
+        <li><span class="experience-year">2024 — Present</span><div><h3 class="title-sm">Software Engineer · Aashvi Infotech</h3><p class="body-md">KCC Digital Gateway Audit Portal and iGaming Platform. Micro frontends, reusable UI systems, APIM, Azure Functions, Cosmos DB, Entra ID, AKS, SignalR, and multi-wallet architecture.</p></div></li>
+        <li><span class="experience-year">2023 — 2024</span><div><h3 class="title-sm">Software Engineer · Advait Business Solutions</h3><p class="body-md">B2B ordering and Procure-to-Pay platforms with SAP synchronization, background services, role-based workflows, PostgreSQL, Azure, AWS, and Jenkins CI/CD.</p></div></li>
+        <li><span class="experience-year">2021 — 2023</span><div><h3 class="title-sm">Software Engineer · Advanced Business Computing Solutions</h3><p class="body-md">E-learning, SAP synchronization, and machine reporting systems using Angular, .NET, SQL Server, OpenLayers, HighCharts, and automated services.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section home-section" id="certifications" aria-labelledby="certifications-title">
+    <div class="container split-section">
+      <div><p class="eyebrow">Learning</p><h2 class="headline-md" id="certifications-title">A practice of staying current.</h2></div>
+      <div class="certification-grid">
+        <p class="certification-item"><strong>GenAI for .NET</strong><span>Build LLM Apps with OpenAI and Ollama · Udemy</span></p>
+        <p class="certification-item"><strong>Single Agent .NET Applications</strong><span>Using Semantic Kernel · Udemy</span></p>
+        <p class="certification-item"><strong>Microsoft Azure for .NET Developers</strong><span>Udemy</span></p>
+        <p class="certification-item"><strong>AWS Fundamentals</strong><span>Going Cloud-Native · Coursera</span></p>
+      </div>
+    </div>
+  </section>
+</main>
