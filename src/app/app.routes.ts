@@ -4,21 +4,22 @@ import { Routes } from '@angular/router';
  *   Import Components
  */
 import { HomeComponent } from './page/home/home.component';
-import { ContactComponent } from './page/contact/contact.component';
+import { WorkComponent } from './page/work/work.component';
 import { SkillsComponent } from './page/skill/skills.component';
-import { PortfolioComponent } from './page/portfolio/portfolio.component';
-import { AboutComponent } from './page/about/about.component';
-import { ExperienceComponent } from './page/experience/experience.component';
-import { CertificationsComponent } from './page/certifications/certifications.component';
+import { ContactComponent } from './page/contact/contact.component';
 
 export const routes: Routes = [
       { path: '', component: HomeComponent },
       { path: 'home', component: HomeComponent },
-      { path: 'about', component: AboutComponent },
-      { path: 'experience', component: ExperienceComponent },
+      { path: 'work', component: WorkComponent },
       { path: 'skills', component: SkillsComponent },
-      { path: 'portfolio', component: PortfolioComponent },
-      { path: 'certifications', component: CertificationsComponent },
       { path: 'contact', component: ContactComponent },
+
+      // Legacy routes kept as redirects so old bookmarks/search results don't 404
+      { path: 'about', redirectTo: 'skills' },
+      { path: 'experience', redirectTo: 'work' },
+      { path: 'portfolio', redirectTo: 'work' },
+      { path: 'certifications', redirectTo: 'skills' },
+
       { path: '**', redirectTo: '' },
 ];
