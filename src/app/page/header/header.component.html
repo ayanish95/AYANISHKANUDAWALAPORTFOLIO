@@ -5,7 +5,9 @@
   <header class="header" data-header>
       <div class="container">
   
-        <a routerLink="/home" class="logo" aria-label="Ayanish Kanudawala home">AK</a>
+        <a routerLink="/home" class="logo" aria-label="Ayanish Kanudawala home">
+          <app-logo />
+        </a>
   
         <nav class="navbar" id="primary-navigation" data-navbar [ngClass]="status ? 'active' : ''">
           <ul class="navbar-list">
@@ -22,10 +24,11 @@
               <a routerLink="/skills" (click)="status = false" class="label-lg navbar-link has-after" routerLinkActive="active">Skills</a>
             </li>
 
-            <li class="navbar-item">
+            <!-- Hidden at desktop widths (>=992px) where the "Contact Now" button already covers this — kept for mobile, where that button is hidden and the nav is the only way to reach Contact. -->
+            <li class="navbar-item navbar-item-contact">
               <a routerLink="/contact" (click)="status = false" class="label-lg navbar-link has-after" routerLinkActive="active">Contact</a>
             </li>
-  
+
           </ul>
         </nav>
   

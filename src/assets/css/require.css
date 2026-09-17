@@ -546,6 +546,8 @@ body {
 
   .header .btn { display: block; }
 
+  .navbar-item-contact { display: none; }
+
 }
 
 
