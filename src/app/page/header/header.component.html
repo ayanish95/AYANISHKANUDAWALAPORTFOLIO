@@ -5,11 +5,11 @@
   <header class="header" data-header>
       <div class="container">
   
-        <a routerLink="/home" class="logo">
-          <!-- <img src="assets/images/logo.svg" width="151" height="28" alt="Jassa home"> -->
+        <a routerLink="/home" class="logo" aria-label="Ayanish Kanudawala home">
+          <app-logo />
         </a>
   
-        <nav class="navbar" data-navbar [ngClass]="status ? 'active' : ''">
+        <nav class="navbar" id="primary-navigation" data-navbar [ngClass]="status ? 'active' : ''">
           <ul class="navbar-list">
   
             <li class="navbar-item">
@@ -17,24 +17,25 @@
             </li>
   
             <li class="navbar-item">
-              <a routerLink="/Skills"  class="label-lg navbar-link has-after" routerLinkActive="active">Skills</a>
+              <a routerLink="/work" (click)="status = false" class="label-lg navbar-link has-after" routerLinkActive="active">Work</a>
             </li>
-  
-            <!-- <li class="navbar-item">
-              <a routerLink="/portfolio"  class="label-lg navbar-link has-after" routerLinkActive="active">Portfolio</a>
-            </li> -->
-  
+
             <li class="navbar-item">
-              <a routerLink="/contact"  class="label-lg navbar-link has-after" routerLinkActive="active">Contact</a>
+              <a routerLink="/skills" (click)="status = false" class="label-lg navbar-link has-after" routerLinkActive="active">Skills</a>
             </li>
-  
+
+            <!-- Hidden at desktop widths (>=992px) where the "Contact Now" button already covers this — kept for mobile, where that button is hidden and the nav is the only way to reach Contact. -->
+            <li class="navbar-item navbar-item-contact">
+              <a routerLink="/contact" (click)="status = false" class="label-lg navbar-link has-after" routerLinkActive="active">Contact</a>
+            </li>
+
           </ul>
         </nav>
   
         <a routerLink="/contact" class="btn btn-primary">Contact Now</a>
   
-        <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler (click)="addToggle()">
-          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        <button class="nav-toggle-btn" aria-label="Toggle navigation" [attr.aria-expanded]="status" aria-controls="primary-navigation" data-nav-toggler (click)="addToggle()">
+          <app-icon name="menu" />
         </button>
   
       </div>

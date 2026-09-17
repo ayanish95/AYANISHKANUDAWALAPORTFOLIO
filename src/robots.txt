@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ayanish95.github.io/AYANISHKANUDAWALAPORTFOLIO/sitemap.xml

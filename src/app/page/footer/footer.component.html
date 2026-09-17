@@ -1,31 +1,9 @@
-<!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-      <div class="container">
-  
-        <ul class="social-list">
-          
-          <li>
-            <a (click)="gotoLink('https://www.linkedin.com/in/ayanishkanudawala/')" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>     
-          
-          <li>
-            <a (click)="gotoLink('https://github.com/ayanish95/')"  class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-  
-          <!-- <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-xbox"></ion-icon>
-            </a>
-          </li> -->
-  
-        </ul>
-  
-      </div>
-    </footer>
+<footer class="footer">
+  <div class="container footer-layout">
+    <p class="footer-copyright">© {{ year }} Ayanish Kanudawala. All rights reserved.</p>
+    <ul class="social-list" aria-label="Professional profiles">
+      <li><a [href]="profile.linkedinUrl" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><app-icon name="linkedin" /></a></li>
+      <li><a [href]="profile.githubUrl" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><app-icon name="github" /></a></li>
+    </ul>
+  </div>
+</footer>

@@ -1,14 +1,13 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { IonCardContent, IonIcon } from '@ionic/angular/standalone';
+import { IconComponent } from '../../shared/icon/icon.component';
+import { PROFILE } from '../../shared/profile';
 
 @Component({
-  selector: 'app-contact',
-  standalone: true,
-  imports: [CommonModule,IonCardContent,IonIcon],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+    selector: 'app-contact',
+    imports: [IconComponent],
+    templateUrl: './contact.component.html',
+    styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-
+    protected readonly profile = PROFILE;
 }
